@@ -291,7 +291,7 @@ td {
   text-align: start;
 }
 .qns-wrapper table thead th:last-child {
-  text-align: end;
+  text-align: center;
 }
 .qns-wrapper table tbody td:last-child {
   padding: 24px;
