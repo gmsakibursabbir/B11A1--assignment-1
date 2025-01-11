@@ -15,8 +15,8 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -55,6 +55,13 @@ h4 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0%;
+}
+h5 {
+  color: rgb(14, 14, 14);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
   letter-spacing: 0%;
 }
 .header-btn {
@@ -232,15 +239,18 @@ h4 {
   align-items: flex-start;
 }
 .quote-wrapper {
-  padding: 48px 24px 48px 24px;
+
   margin-top: 32px;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
-blockquote {
+.quotebox {
+      padding: 48px 24px 48px 24px;
   background-image: url("../assets/quote-bg.png");
   background-repeat: no-repeat;
+  background-position: 24px 24px;
+  z-index: 1;
 }
 .quote-wrapper blockquote p {
   color: rgba(14, 14, 14, 0.8);
@@ -255,7 +265,6 @@ blockquote {
 #opinion {
   padding: 40px 0;
 }
-
 .qns-wrapper {
   padding: 32px;
   margin-top: 32px;
@@ -264,8 +273,50 @@ blockquote {
 }
 .qns-wrapper table {
   width: 100%;
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
+}
+.qns-wrapper table th,
+td {
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  padding: 24px;
+}
+.qns-wrapper table tbody td:last-child {
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+.qns-wrapper table thead {
+  background-color: rgb(198, 228, 214);
+}
+.qns-wrapper table thead th:first-child {
+  text-align: start;
+}
+.qns-wrapper table thead th:last-child {
+  text-align: end;
+}
+.qns-wrapper table tbody td:last-child {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+select {
+  padding: 10px 14px 10px 14px;
+  border: 1px solid rgb(14, 14, 14);
+  border-radius: 4px;
+  background: rgb(198, 228, 214);
+  color: rgb(14, 14, 14);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+}
+select option {
+  color: rgb(14, 14, 14);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
 }
 /* news start */
 #news {
@@ -495,10 +546,10 @@ form {
   margin: 0 auto;
   padding: 0 20px;
 }
-.footer-top{
-    text-align: center;
-    padding-bottom: 31.5px;
-    border-bottom: 1px solid rgba(14, 14, 14, 0.1);
+.footer-top {
+  text-align: center;
+  padding-bottom: 31.5px;
+  border-bottom: 1px solid rgba(14, 14, 14, 0.1);
 }
 .footer-logo {
   color: rgb(14, 14, 14);
@@ -507,12 +558,12 @@ form {
   line-height: 38px;
   letter-spacing: 0%;
 }
-.footer-bottom{
-    padding-top: 32.5px;
+.footer-bottom {
+  padding-top: 32.5px;
 }
-.footer-bottom ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 23px;
+.footer-bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
 }
