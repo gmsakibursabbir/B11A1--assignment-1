@@ -239,14 +239,13 @@ h5 {
   align-items: flex-start;
 }
 .quote-wrapper {
-
   margin-top: 32px;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
 .quotebox {
-      padding: 48px 24px 48px 24px;
+  padding: 48px 24px 48px 24px;
   background-image: url("../assets/quote-bg.png");
   background-repeat: no-repeat;
   background-position: 24px 24px;
@@ -310,6 +309,12 @@ select {
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0%;
+  background-image: url("data:image/svg+xml,%3Csvg width='14.008057' height='8.003906' viewBox='0 0 14.0081 8.00391' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs/%3E%3Cpath id='Vector' d='M1 1L7 7L13 1' stroke='%23000000' stroke-opacity='1.000000' stroke-width='2.000000' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-position: calc(100% - 0.75rem) center !important;
+  background-repeat: no-repeat !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
 }
 select option {
   color: rgb(14, 14, 14);
